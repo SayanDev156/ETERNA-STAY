@@ -1,0 +1,1751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./logo-removebg-preview.png">
+    <title>EternaStay - Premium Hotel Booking</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- css link -->
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand animate_animated animate_fadeInLeft nav-img" href="#"><img src="./logo-removebg-preview.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto animate_animated animate_fadeInRight">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#rooms">Rooms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#service">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#review">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-gold rounded-pill px-4" href="#">Book Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+     <!-- Hero Section with Carousel -->
+     <section class="hero-section">
+        <div class="hero-carousel">
+            <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="4"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="5000">
+                        <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="d-block w-100" alt="Luxury Hotel">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="d-block w-100" alt="Hotel Pool">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/b0/c1/4c/boutique-hotels.jpg?w=1200&h=-1&s=1" class="d-block w-100" alt="Hotel Lobby">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80" class="d-block w-100" alt="Hotel Room">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="d-block w-100" alt="Hotel Restaurant">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 animate_animated animate_fadeInUp">
+                    <h1 class="hero-title">Experience Unparalleled Luxury</h1>
+                    <p class="hero-subtitle">Discover the perfect blend of comfort and elegance at our premium hotel located in the heart of the city.</p>
+                    <a href="#rooms" class="btn btn-gold btn-lg rounded-pill px-4 pulse-animation">Explore Rooms</a>
+                </div>
+                <div class="col-lg-6 animate_animated animatefadeInUp animate_delay-1s">
+                    <div class="booking-card">
+                        <h3 class="text-center mb-4" style="color: var(--navy-blue);"><b>Book Your Stay</b></h3>
+                        <form>
+                            <div class="mb-3">
+                                <label for="check-in" class="form-label">Check-In</label>
+                                <input type="date" class="form-control" id="check-in">
+                            </div>
+                            <div class="mb-3">
+                                <label for="check-out" class="form-label">Check-Out</label>
+                                <input type="date" class="form-control" id="check-out">
+                            </div>
+                            <div class="mb-3">
+                                <label for="guests" class="form-label">Guests</label>
+                                <select class="form-select" id="guests">
+                                    <option >No of guest</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4+</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-dark w-100" style="background-color: var(--navy-blue);">Check Availability</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+<!-- Rooms Section -->
+<section id="rooms" class="py-5 bg-light">
+    <div class="container py-5">
+        <div class="text-center mb-5 animate__animated animate__fadeIn">
+            <h2 class="section-title">Our Luxurious Rooms</h2>
+            <p class="text-muted">Choose from our exquisite collection of rooms designed for your comfort</p>
+        </div>
+        <div class="row">
+            <!-- Room 1 -->
+            <div class="col-md-4 col-lg-3 animate__animated animate__fadeInUp">
+                <div class="room-card">
+                    <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="room-img w-100" alt="Deluxe Room">
+                    <div class="card-body">
+                        <h5 class="room-title">Deluxe Room</h5>
+                        <p class="text-muted">Spacious room with premium amenities and city view</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="price">$199/night</span>
+                            <button class="btn btn-sm btn-gold" data-bs-toggle="modal" data-bs-target="#roomModal1">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Room 2 -->
+            <div class="col-md-4 col-lg-3 animate__animated animate__fadeInUp animate__delay-1s">
+                <div class="room-card">
+                    <img src="https://lux-life.digital/wp-content/uploads/2019/09/turkish-hotel.jpg" class="room-img w-100" alt="Executive Suite">
+                    <div class="card-body">
+                        <h5 class="room-title">Executive Suite</h5>
+                        <p class="text-muted">Luxurious suite with separate living area and balcony</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="price">$299/night</span>
+                            <button class="btn btn-sm btn-gold" data-bs-toggle="modal" data-bs-target="#roomModal2">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Room 3 -->
+            <div class="col-md-4 col-lg-3 animate__animated animate__fadeInUp animate__delay-2s">
+                <div class="room-card">
+                    <img src="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="room-img w-100" alt="Presidential Suite">
+                    <div class="card-body">
+                        <h5 class="room-title">Presidential Suite</h5>
+                        <p class="text-muted">Ultimate luxury with panoramic views and premium services</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="price">$499/night</span>
+                            <button class="btn btn-sm btn-gold" data-bs-toggle="modal" data-bs-target="#roomModal3">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Room 4 -->
+            <div class="col-md-4 col-lg-3 animate__animated animate__fadeInUp">
+                <div class="room-card">
+                    <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="room-img w-100" alt="Ocean View Room">
+                    <div class="card-body">
+                        <h5 class="room-title">Ocean View Room</h5>
+                        <p class="text-muted">Stunning ocean views with private balcony</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="price">$249/night</span>
+                            <button class="btn btn-sm btn-gold" data-bs-toggle="modal" data-bs-target="#roomModal4">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Room 5 -->
+            <div class="col-md-4 col-lg-3 animate__animated animate__fadeInUp animate__delay-1s">
+                <div class="room-card">
+                    <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="room-img w-100" alt="Junior Suite">
+                    <div class="card-body">
+                        <h5 class="room-title">Junior Suite</h5>
+                        <p class="text-muted">Spacious suite with sitting area and premium amenities</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="price">$349/night</span>
+                            <button class="btn btn-sm btn-gold" data-bs-toggle="modal" data-bs-target="#roomModal5">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Room 6 -->
+            <div class="col-md-4 col-lg-3 animate__animated animate__fadeInUp animate__delay-2s">
+                <div class="room-card">
+                    <img src="https://plus.unsplash.com/premium_photo-1661876403473-64980cbfdf0f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="room-img w-100" alt="Family Suite">
+                    <div class="card-body">
+                        <h5 class="room-title">Family Suite</h5>
+                        <p class="text-muted">Perfect for families with connecting rooms</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="price">$399/night</span>
+                            <button class="btn btn-sm btn-gold" data-bs-toggle="modal" data-bs-target="#roomModal6">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Room 7 -->
+            <div class="col-md-4 col-lg-3 animate__animated animate__fadeInUp">
+                <div class="room-card">
+                    <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="room-img w-100" alt="Honeymoon Suite">
+                    <div class="card-body">
+                        <h5 class="room-title">Honeymoon Suite</h5>
+                        <p class="text-muted">Romantic retreat with champagne on arrival</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="price">$459/night</span>
+                            <button class="btn btn-sm btn-gold" data-bs-toggle="modal" data-bs-target="#roomModal7">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Room 8 -->
+            <div class="col-md-4 col-lg-3 animate__animated animate__fadeInUp animate__delay-1s">
+                <div class="room-card">
+                    <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="room-img w-100" alt="Executive King">
+                    <div class="card-body">
+                        <h5 class="room-title">Executive King</h5>
+                        <p class="text-muted">King-sized luxury with executive lounge access</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="price">$379/night</span>
+                            <button class="btn btn-sm btn-gold" data-bs-toggle="modal" data-bs-target="#roomModal8">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Additional Rooms (hidden by default) -->
+            <div class="col-md-4 col-lg-3 animate__animated animate__fadeInUp extra-room" style="display: none;">
+                <div class="room-card">
+                    <img src="https://plus.unsplash.com/premium_photo-1681487479203-464a22302b27?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fHw%3D" class="room-img w-100" alt="Garden View Room">
+                    <div class="card-body">
+                        <h5 class="room-title">Garden View Room</h5>
+                        <p class="text-muted">Peaceful retreat overlooking our lush gardens</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="price">$229/night</span>
+                            <button class="btn btn-sm btn-gold" data-bs-toggle="modal" data-bs-target="#roomModal9">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 col-lg-3 animate__animated animate__fadeInUp animate__delay-1s extra-room" style="display: none;">
+                <div class="room-card">
+                    <img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="room-img w-100" alt="Penthouse Suite">
+                    <div class="card-body">
+                        <h5 class="room-title">Penthouse Suite</h5>
+                        <p class="text-muted">Ultimate luxury with private rooftop terrace</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="price">$599/night</span>
+                            <button class="btn btn-sm btn-gold" data-bs-toggle="modal" data-bs-target="#roomModal10">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 col-lg-3 animate__animated animate__fadeInUp animate__delay-2s extra-room" style="display: none;">
+                <div class="room-card">
+                    <img src="https://images.unsplash.com/photo-1564078516393-cf04bd966897?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="room-img w-100" alt="Business Suite">
+                    <div class="card-body">
+                        <h5 class="room-title">Business Suite</h5>
+                        <p class="text-muted">Productive space with work desk and meeting area</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="price">$329/night</span>
+                            <button class="btn btn-sm btn-gold" data-bs-toggle="modal" data-bs-target="#roomModal11">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 col-lg-3 animate__animated animate__fadeInUp extra-room" style="display: none;">
+                <div class="room-card">
+                    <img src="https://images.unsplash.com/photo-1599619351208-3e6c839d6828?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80" class="room-img w-100" alt="Accessible Room">
+                    <div class="card-body">
+                        <h5 class="room-title">Accessible Room</h5>
+                        <p class="text-muted">Designed for comfort with accessibility features</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="price">$219/night</span>
+                            <button class="btn btn-sm btn-gold" data-bs-toggle="modal" data-bs-target="#roomModal12">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 col-lg-3 animate__animated animate__fadeInUp animate__delay-1s extra-room" style="display: none;">
+                <div class="room-card">
+                    <img src="https://plus.unsplash.com/premium_photo-1661962495669-d72424626bdc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fHw%3D" class="room-img w-100" alt="Poolside Villa">
+                    <div class="card-body">
+                        <h5 class="room-title">Poolside Villa</h5>
+                        <p class="text-muted">Private villa with direct pool access</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="price">$429/night</span>
+                            <button class="btn btn-sm btn-gold" data-bs-toggle="modal" data-bs-target="#roomModal13">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 col-lg-3 animate__animated animate__fadeInUp animate__delay-2s extra-room" style="display: none;">
+                <div class="room-card">
+                    <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="room-img w-100" alt="Corner Suite">
+                    <div class="card-body">
+                        <h5 class="room-title">Corner Suite</h5>
+                        <p class="text-muted">Corner unit with panoramic city views</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="price">$369/night</span>
+                            <button class="btn btn-sm btn-gold" data-bs-toggle="modal" data-bs-target="#roomModal14">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 col-lg-3 animate__animated animate__fadeInUp extra-room" style="display: none;">
+                <div class="room-card">
+                    <img src="https://plus.unsplash.com/premium_photo-1661914368757-a57361d31b45?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDl8fHxlbnwwfHx8fHw%3D" class="room-img w-100" alt="Royal Suite">
+                    <div class="card-body">
+                        <h5 class="room-title">Royal Suite</h5>
+                        <p class="text-muted">Regal accommodations with butler service</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="price">$549/night</span>
+                            <button class="btn btn-sm btn-gold" data-bs-toggle="modal" data-bs-target="#roomModal15">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 col-lg-3 animate__animated animate__fadeInUp animate__delay-1s extra-room" style="display: none;">
+                <div class="room-card">
+                    <img src="https://plus.unsplash.com/premium_photo-1661962346904-8a489ef9b9e7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEyfHx8ZW58MHx8fHx8" class="room-img w-100" alt="Twin Room">
+                    <div class="card-body">
+                        <h5 class="room-title">Twin Room</h5>
+                        <p class="text-muted">Two comfortable beds with all amenities</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="price">$189/night</span>
+                            <button class="btn btn-sm btn-gold" data-bs-toggle="modal" data-bs-target="#roomModal16">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 col-lg-3 animate__animated animate__fadeInUp animate__delay-2s extra-room" style="display: none;">
+                <div class="room-card">
+                    <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="room-img w-100" alt="Spa Suite">
+                    <div class="card-body">
+                        <h5 class="room-title">Spa Suite</h5>
+                        <p class="text-muted">In-room spa facilities with massage area</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="price">$479/night</span>
+                            <button class="btn btn-sm btn-gold" data-bs-toggle="modal" data-bs-target="#roomModal17">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- New Room 18 -->
+            <div class="col-md-4 col-lg-3 animate__animated animate__fadeInUp extra-room" style="display: none;">
+                <div class="room-card">
+                    <img src="https://plus.unsplash.com/premium_photo-1661963058256-5358560f4c6c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE3fHx8ZW58MHx8fHx8" class="room-img w-100" alt="Executive Double">
+                    <div class="card-body">
+                        <h5 class="room-title">Executive Double</h5>
+                        <p class="text-muted">Premium double room with workspace</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="price">$279/night</span>
+                            <button class="btn btn-sm btn-gold" data-bs-toggle="modal" data-bs-target="#roomModal18">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- New Room 19 -->
+            <div class="col-md-4 col-lg-3 animate__animated animate__fadeInUp animate__delay-1s extra-room" style="display: none;">
+                <div class="room-card">
+                    <img src="https://plus.unsplash.com/premium_photo-1664299335717-71d868cd964e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="room-img w-100" alt="Panoramic Suite">
+                    <div class="card-body">
+                        <h5 class="room-title">Panoramic Suite</h5>
+                        <p class="text-muted">Floor-to-ceiling windows with city views</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="price">$419/night</span>
+                            <button class="btn btn-sm btn-gold" data-bs-toggle="modal" data-bs-target="#roomModal19">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- New Room 20 -->
+            <div class="col-md-4 col-lg-3 animate__animated animate__fadeInUp animate__delay-2s extra-room" style="display: none;">
+                <div class="room-card">
+                    <img src="https://plus.unsplash.com/premium_photo-1661962784149-4616ae54e9b4?q=80&w=2154&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="room-img w-100" alt="Grand Deluxe">
+                    <div class="card-body">
+                        <h5 class="room-title">Grand Deluxe</h5>
+                        <p class="text-muted">Extra spacious room with premium amenities</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="price">$319/night</span>
+                            <button class="btn btn-sm btn-gold" data-bs-toggle="modal" data-bs-target="#roomModal20">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-4 animate__animated animate__fadeIn animate__delay-3s">
+            <button id="viewAllRooms" class="btn btn-gold px-4">View All Rooms</button>
+        </div>
+    </div>
+</section>
+    <!-- All Rooms Modal -->
+    <div class="modal fade" id="allRoomsModal" tabindex="-1" aria-labelledby="allRoomsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="allRoomsModalLabel">All Our Luxurious Rooms</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <!-- Room 1 in Modal -->
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100">
+                                <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="card-img-top" alt="Deluxe Room">
+                                <div class="card-body">
+                                    <h5 class="card-title">Deluxe Room</h5>
+                                    <p class="card-text">Spacious room with premium amenities and city view</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="price">$199/night</span>
+                                        <button class="btn btn-sm btn-gold" data-bs-toggle="modal" data-bs-target="#roomModal1">View Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Room 2 in Modal -->
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100">
+                                <img src="https://lux-life.digital/wp-content/uploads/2019/09/turkish-hotel.jpg" class="card-img-top" alt="Executive Suite">
+                                <div class="card-body">
+                                    <h5 class="card-title">Executive Suite</h5>
+                                    <p class="card-text">Luxurious suite with separate living area and balcony</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="price">$299/night</span>
+                                        <button class="btn btn-sm btn-gold" data-bs-toggle="modal" data-bs-target="#roomModal2">View Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Room 3 in Modal -->
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100">
+                                <img src="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="card-img-top" alt="Presidential Suite">
+                                <div class="card-body">
+                                    <h5 class="card-title">Presidential Suite</h5>
+                                    <p class="card-text">Ultimate luxury with panoramic views and premium services</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="price">$499/night</span>
+                                        <button class="btn btn-sm btn-gold" data-bs-toggle="modal" data-bs-target="#roomModal3">View Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Room 4 in Modal -->
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100">
+                                <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="card-img-top" alt="Ocean View Room">
+                                <div class="card-body">
+                                    <h5 class="card-title">Ocean View Room</h5>
+                                    <p class="card-text">Stunning ocean views with private balcony</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="price">$249/night</span>
+                                        <button class="btn btn-sm btn-gold" data-bs-toggle="modal" data-bs-target="#roomModal4">View Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Room 5 in Modal -->
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100">
+                                <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="card-img-top" alt="Junior Suite">
+                                <div class="card-body">
+                                    <h5 class="card-title">Junior Suite</h5>
+                                    <p class="card-text">Spacious suite with sitting area and premium amenities</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="price">$349/night</span>
+                                        <button class="btn btn-sm btn-gold" data-bs-toggle="modal" data-bs-target="#roomModal5">View Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Room 6 in Modal -->
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100">
+                                <img src="https://plus.unsplash.com/premium_photo-1661876403473-64980cbfdf0f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Family Suite">
+                                <div class="card-body">
+                                    <h5 class="card-title">Family Suite</h5>
+                                    <p class="card-text">Perfect for families with connecting rooms</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="price">$399/night</span>
+                                        <button class="btn btn-sm btn-gold" data-bs-toggle="modal" data-bs-target="#roomModal6">View Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Room 7 in Modal -->
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100">
+                                <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="card-img-top" alt="Honeymoon Suite">
+                                <div class="card-body">
+                                    <h5 class="card-title">Honeymoon Suite</h5>
+                                    <p class="card-text">Romantic retreat with champagne on arrival</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="price">$459/night</span>
+                                        <button class="btn btn-sm btn-gold" data-bs-toggle="modal" data-bs-target="#roomModal7">View Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Room 8 in Modal -->
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100">
+                                <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="card-img-top" alt="Executive King">
+                                <div class="card-body">
+                                    <h5 class="card-title">Executive King</h5>
+                                    <p class="card-text">King-sized luxury with executive lounge access</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="price">$379/night</span>
+                                        <button class="btn btn-sm btn-gold" data-bs-toggle="modal" data-bs-target="#roomModal8">View Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Room 9 in Modal -->
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100">
+                                <img src="https://plus.unsplash.com/premium_photo-1681487479203-464a22302b27?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fHw%3D" class="card-img-top" alt="Garden View Room">
+                                <div class="card-body">
+                                    <h5 class="card-title">Garden View Room</h5>
+                                    <p class="card-text">Peaceful retreat overlooking our lush gardens</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="price">$229/night</span>
+                                        <button class="btn btn-sm btn-gold" data-bs-toggle="modal" data-bs-target="#roomModal9">View Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Room 10 in Modal -->
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100">
+                                <img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="card-img-top" alt="Penthouse Suite">
+                                <div class="card-body">
+                                    <h5 class="card-title">Penthouse Suite</h5>
+                                    <p class="card-text">Ultimate luxury with private rooftop terrace</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="price">$599/night</span>
+                                        <button class="btn btn-sm btn-gold" data-bs-toggle="modal" data-bs-target="#roomModal10">View Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Room 11 in Modal -->
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100">
+                                <img src="https://images.unsplash.com/photo-1564078516393-cf04bd966897?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="card-img-top" alt="Business Suite">
+                                <div class="card-body">
+                                    <h5 class="card-title">Business Suite</h5>
+                                    <p class="card-text">Productive space with work desk and meeting area</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="price">$329/night</span>
+                                        <button class="btn btn-sm btn-gold" data-bs-toggle="modal" data-bs-target="#roomModal11">View Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Room 12 in Modal -->
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100">
+                                <img src="https://images.unsplash.com/photo-1599619351208-3e6c839d6828?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80" class="card-img-top" alt="Accessible Room">
+                                <div class="card-body">
+                                    <h5 class="card-title">Accessible Room</h5>
+                                    <p class="card-text">Designed for comfort with accessibility features</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="price">$219/night</span>
+                                        <button class="btn btn-sm btn-gold" data-bs-toggle="modal" data-bs-target="#roomModal12">View Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Room 13 in Modal -->
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100">
+                                <img src="https://plus.unsplash.com/premium_photo-1661962495669-d72424626bdc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fHw%3D" class="card-img-top" alt="Poolside Villa">
+                                <div class="card-body">
+                                    <h5 class="card-title">Poolside Villa</h5>
+                                    <p class="card-text">Private villa with direct pool access</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="price">$429/night</span>
+                                        <button class="btn btn-sm btn-gold" data-bs-toggle="modal" data-bs-target="#roomModal13">View Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Room 14 in Modal -->
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100">
+                                <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="card-img-top" alt="Corner Suite">
+                                <div class="card-body">
+                                    <h5 class="card-title">Corner Suite</h5>
+                                    <p class="card-text">Corner unit with panoramic city views</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="price">$369/night</span>
+                                        <button class="btn btn-sm btn-gold" data-bs-toggle="modal" data-bs-target="#roomModal14">View Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Room 15 in Modal -->
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100">
+                                <img src="https://plus.unsplash.com/premium_photo-1661914368757-a57361d31b45?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDl8fHxlbnwwfHx8fHw%3D" class="card-img-top" alt="Royal Suite">
+                                <div class="card-body">
+                                    <h5 class="card-title">Royal Suite</h5>
+                                    <p class="card-text">Regal accommodations with butler service</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="price">$549/night</span>
+                                        <button class="btn btn-sm btn-gold" data-bs-toggle="modal" data-bs-target="#roomModal15">View Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Room 16 in Modal -->
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100">
+                                <img src="https://plus.unsplash.com/premium_photo-1661962346904-8a489ef9b9e7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEyfHx8ZW58MHx8fHx8" class="card-img-top" alt="Twin Room">
+                                <div class="card-body">
+                                    <h5 class="card-title">Twin Room</h5>
+                                    <p class="card-text">Two comfortable beds with all amenities</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="price">$189/night</span>
+                                        <button class="btn btn-sm btn-gold" data-bs-toggle="modal" data-bs-target="#roomModal16">View Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Room 17 in Modal -->
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100">
+                                <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="card-img-top" alt="Spa Suite">
+                                <div class="card-body">
+                                    <h5 class="card-title">Spa Suite</h5>
+                                    <p class="card-text">In-room spa facilities with massage area</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="price">$479/night</span>
+                                        <button class="btn btn-sm btn-gold" data-bs-toggle="modal" data-bs-target="#roomModal17">View Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Individual Room Modals -->
+    <!-- Room Modal 1 -->
+    <div class="modal fade" id="roomModal1" tabindex="-1" aria-labelledby="roomModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="roomModal1Label">Deluxe Room</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="room-modal-img" alt="Deluxe Room">
+                            <div class="d-flex justify-content-between mb-3">
+                                <span class="modal-price">$199/night</span>
+                                <span><i class="fas fa-user-friends me-2"></i>2 Guests</span>
+                                <span><i class="fas fa-ruler-combined me-2"></i>35 sqm</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h5 class="modal-room-title">Room Features</h5>
+                            <ul class="room-features">
+                                <li><i class="fas fa-bed"></i> King-size bed with premium linens</li>
+                                <li><i class="fas fa-tv"></i> 42" Smart TV with streaming services</li>
+                                <li><i class="fas fa-wifi"></i> High-speed WiFi</li>
+                                <li><i class="fas fa-coffee"></i> Coffee/tea making facilities</li>
+                                <li><i class="fas fa-snowflake"></i> Air conditioning</li>
+                                <li><i class="fas fa-bath"></i> Marble bathroom with rain shower</li>
+                            </ul>
+                            <div class="mt-4">
+                                <button class="btn btn-gold w-100">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Room Modal 2 -->
+    <div class="modal fade" id="roomModal2" tabindex="-1" aria-labelledby="roomModal2Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="roomModal2Label">Executive Suite</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="https://lux-life.digital/wp-content/uploads/2019/09/turkish-hotel.jpg" class="room-modal-img" alt="Executive Suite">
+                            <div class="d-flex justify-content-between mb-3">
+                                <span class="modal-price">$299/night</span>
+                                <span><i class="fas fa-user-friends me-2"></i>2 Guests</span>
+                                <span><i class="fas fa-ruler-combined me-2"></i>55 sqm</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h5 class="modal-room-title">Suite Features</h5>
+                            <ul class="room-features">
+                                <li><i class="fas fa-bed"></i> King-size bed with premium linens</li>
+                                <li><i class="fas fa-couch"></i> Separate living area</li>
+                                <li><i class="fas fa-umbrella-beach"></i> Private balcony with city views</li>
+                                <li><i class="fas fa-wifi"></i> High-speed WiFi</li>
+                                <li><i class="fas fa-wine-glass-alt"></i> Mini-bar with complimentary items</li>
+                                <li><i class="fas fa-bath"></i> Spa bathroom with soaking tub</li>
+                            </ul>
+                            <div class="mt-4">
+                                <button class="btn btn-gold w-100">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Room Modal 3 -->
+    <div class="modal fade" id="roomModal3" tabindex="-1" aria-labelledby="roomModal3Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="roomModal3Label">Presidential Suite</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="room-modal-img" alt="Presidential Suite">
+                            <div class="d-flex justify-content-between mb-3">
+                                <span class="modal-price">$499/night</span>
+                                <span><i class="fas fa-user-friends me-2"></i>4 Guests</span>
+                                <span><i class="fas fa-ruler-combined me-2"></i>120 sqm</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h5 class="modal-room-title">Suite Features</h5>
+                            <ul class="room-features">
+                                <li><i class="fas fa-bed"></i> King-size master bedroom + separate guest room</li>
+                                <li><i class="fas fa-couch"></i> Spacious living and dining area</li>
+                                <li><i class="fas fa-utensils"></i> Fully equipped kitchen</li>
+                                <li><i class="fas fa-tv"></i> Multiple smart TVs</li>
+                                <li><i class="fas fa-concierge-bell"></i> 24/7 butler service</li>
+                                <li><i class="fas fa-spa"></i> Luxury spa bathroom with jacuzzi</li>
+                            </ul>
+                            <div class="mt-4">
+                                <button class="btn btn-gold w-100">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Room Modal 4 -->
+    <div class="modal fade" id="roomModal4" tabindex="-1" aria-labelledby="roomModal4Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="roomModal4Label">Ocean View Room</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="room-modal-img" alt="Ocean View Room">
+                            <div class="d-flex justify-content-between mb-3">
+                                <span class="modal-price">$249/night</span>
+                                <span><i class="fas fa-user-friends me-2"></i>2 Guests</span>
+                                <span><i class="fas fa-ruler-combined me-2"></i>40 sqm</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h5 class="modal-room-title">Room Features</h5>
+                            <ul class="room-features">
+                                <li><i class="fas fa-bed"></i> King-size bed with premium linens</li>
+                                <li><i class="fas fa-umbrella-beach"></i> Private balcony with ocean views</li>
+                                <li><i class="fas fa-wifi"></i> High-speed WiFi</li>
+                                <li><i class="fas fa-tv"></i> 42" Smart TV with streaming services</li>
+                                <li><i class="fas fa-coffee"></i> Coffee/tea making facilities</li>
+                                <li><i class="fas fa-bath"></i> Marble bathroom with rain shower</li>
+                            </ul>
+                            <div class="mt-4">
+                                <button class="btn btn-gold w-100">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Room Modal 5 -->
+    <div class="modal fade" id="roomModal5" tabindex="-1" aria-labelledby="roomModal5Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="roomModal5Label">Junior Suite</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="room-modal-img" alt="Junior Suite">
+                            <div class="d-flex justify-content-between mb-3">
+                                <span class="modal-price">$349/night</span>
+                                <span><i class="fas fa-user-friends me-2"></i>2 Guests</span>
+                                <span><i class="fas fa-ruler-combined me-2"></i>50 sqm</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h5 class="modal-room-title">Suite Features</h5>
+                            <ul class="room-features">
+                                <li><i class="fas fa-bed"></i> King-size bed with premium linens</li>
+                                <li><i class="fas fa-couch"></i> Comfortable sitting area</li>
+                                <li><i class="fas fa-city"></i> City views</li>
+                                <li><i class="fas fa-wifi"></i> High-speed WiFi</li>
+                                <li><i class="fas fa-wine-glass-alt"></i> Mini-bar with complimentary items</li>
+                                <li><i class="fas fa-bath"></i> Marble bathroom with rain shower</li>
+                            </ul>
+                            <div class="mt-4">
+                                <button class="btn btn-gold w-100">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Room Modal 6 -->
+    <div class="modal fade" id="roomModal6" tabindex="-1" aria-labelledby="roomModal6Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="roomModal6Label">Family Suite</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="https://plus.unsplash.com/premium_photo-1661876403473-64980cbfdf0f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="room-modal-img" alt="Family Suite">
+                            <div class="d-flex justify-content-between mb-3">
+                                <span class="modal-price">$399/night</span>
+                                <span><i class="fas fa-user-friends me-2"></i>4 Guests</span>
+                                <span><i class="fas fa-ruler-combined me-2"></i>65 sqm</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h5 class="modal-room-title">Suite Features</h5>
+                            <ul class="room-features">
+                                <li><i class="fas fa-bed"></i> 1 King bed + 2 twin beds in connecting room</li>
+                                <li><i class="fas fa-couch"></i> Spacious living area</li>
+                                <li><i class="fas fa-child"></i> Child-friendly amenities available</li>
+                                <li><i class="fas fa-wifi"></i> High-speed WiFi</li>
+                                <li><i class="fas fa-tv"></i> Multiple smart TVs</li>
+                                <li><i class="fas fa-bath"></i> Two full bathrooms</li>
+                            </ul>
+                            <div class="mt-4">
+                                <button class="btn btn-gold w-100">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Room Modal 7 -->
+    <div class="modal fade" id="roomModal7" tabindex="-1" aria-labelledby="roomModal7Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="roomModal7Label">Honeymoon Suite</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="room-modal-img" alt="Honeymoon Suite">
+                            <div class="d-flex justify-content-between mb-3">
+                                <span class="modal-price">$459/night</span>
+                                <span><i class="fas fa-user-friends me-2"></i>2 Guests</span>
+                                <span><i class="fas fa-ruler-combined me-2"></i>60 sqm</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h5 class="modal-room-title">Suite Features</h5>
+                            <ul class="room-features">
+                                <li><i class="fas fa-bed"></i> King-size canopy bed with premium linens</li>
+                                <li><i class="fas fa-spa"></i> In-room couples massage area</li>
+                                <li><i class="fas fa-glass-cheers"></i> Champagne on arrival</li>
+                                <li><i class="fas fa-umbrella-beach"></i> Private balcony with romantic views</li>
+                                <li><i class="fas fa-hot-tub"></i> Jacuzzi tub for two</li>
+                                <li><i class="fas fa-moon"></i> Turn-down service with rose petals</li>
+                            </ul>
+                            <div class="mt-4">
+                                <button class="btn btn-gold w-100">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Room Modal 8 -->
+    <div class="modal fade" id="roomModal8" tabindex="-1" aria-labelledby="roomModal8Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="roomModal8Label">Executive King</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="room-modal-img" alt="Executive King">
+                            <div class="d-flex justify-content-between mb-3">
+                                <span class="modal-price">$379/night</span>
+                                <span><i class="fas fa-user-friends me-2"></i>2 Guests</span>
+                                <span><i class="fas fa-ruler-combined me-2"></i>45 sqm</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h5 class="modal-room-title">Room Features</h5>
+                            <ul class="room-features">
+                                <li><i class="fas fa-bed"></i> King-size bed with premium linens</li>
+                                <li><i class="fas fa-building"></i> Executive lounge access</li>
+                                <li><i class="fas fa-coffee"></i> Complimentary breakfast and evening cocktails</li>
+                                <li><i class="fas fa-desktop"></i> Work desk with ergonomic chair</li>
+                                <li><i class="fas fa-wifi"></i> High-speed WiFi with business center access</li>
+                                <li><i class="fas fa-bath"></i> Marble bathroom with rain shower</li>
+                            </ul>
+                            <div class="mt-4">
+                                <button class="btn btn-gold w-100">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Room Modal 9 -->
+    <div class="modal fade" id="roomModal9" tabindex="-1" aria-labelledby="roomModal9Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="roomModal9Label">Garden View Room</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="https://plus.unsplash.com/premium_photo-1681487479203-464a22302b27?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fHw%3D" class="room-modal-img" alt="Garden View Room">
+                            <div class="d-flex justify-content-between mb-3">
+                                <span class="modal-price">$229/night</span>
+                                <span><i class="fas fa-user-friends me-2"></i>2 Guests</span>
+                                <span><i class="fas fa-ruler-combined me-2"></i>35 sqm</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h5 class="modal-room-title">Room Features</h5>
+                            <ul class="room-features">
+                                <li><i class="fas fa-bed"></i> King-size or twin beds available</li>
+                                <li><i class="fas fa-leaf"></i> Views of our lush gardens</li>
+                                <li><i class="fas fa-wifi"></i> High-speed WiFi</li>
+                                <li><i class="fas fa-tv"></i> 42" Smart TV with streaming services</li>
+                                <li><i class="fas fa-coffee"></i> Coffee/tea making facilities</li>
+                                <li><i class="fas fa-bath"></i> Marble bathroom with rain shower</li>
+                            </ul>
+                            <div class="mt-4">
+                                <button class="btn btn-gold w-100">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Room Modal 10 -->
+    <div class="modal fade" id="roomModal10" tabindex="-1" aria-labelledby="roomModal10Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="roomModal10Label">Penthouse Suite</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="room-modal-img" alt="Penthouse Suite">
+                            <div class="d-flex justify-content-between mb-3">
+                                <span class="modal-price">$599/night</span>
+                                <span><i class="fas fa-user-friends me-2"></i>4 Guests</span>
+                                <span><i class="fas fa-ruler-combined me-2"></i>150 sqm</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h5 class="modal-room-title">Suite Features</h5>
+                            <ul class="room-features">
+                                <li><i class="fas fa-bed"></i> King-size master bedroom + separate guest room</li>
+                                <li><i class="fas fa-umbrella"></i> Private rooftop terrace with panoramic views</li>
+                                <li><i class="fas fa-hot-tub"></i> Outdoor jacuzzi</li>
+                                <li><i class="fas fa-concierge-bell"></i> 24/7 butler service</li>
+                                <li><i class="fas fa-utensils"></i> Fully equipped kitchen</li>
+                                <li><i class="fas fa-spa"></i> Luxury spa bathroom with jacuzzi</li>
+                            </ul>
+                            <div class="mt-4">
+                                <button class="btn btn-gold w-100">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Room Modal 11 -->
+    <div class="modal fade" id="roomModal11" tabindex="-1" aria-labelledby="roomModal11Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="roomModal11Label">Business Suite</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="https://images.unsplash.com/photo-1564078516393-cf04bd966897?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="room-modal-img" alt="Business Suite">
+                            <div class="d-flex justify-content-between mb-3">
+                                <span class="modal-price">$329/night</span>
+                                <span><i class="fas fa-user-friends me-2"></i>2 Guests</span>
+                                <span><i class="fas fa-ruler-combined me-2"></i>50 sqm</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h5 class="modal-room-title">Suite Features</h5>
+                            <ul class="room-features">
+                                <li><i class="fas fa-bed"></i> King-size bed with premium linens</li>
+                                <li><i class="fas fa-desktop"></i> Spacious work area with ergonomic chair</li>
+                                <li><i class="fas fa-print"></i> Printer/scanner available on request</li>
+                                <li><i class="fas fa-wifi"></i> High-speed WiFi with VPN access</li>
+                                <li><i class="fas fa-building"></i> Executive lounge access</li>
+                                <li><i class="fas fa-bath"></i> Marble bathroom with rain shower</li>
+                            </ul>
+                            <div class="mt-4">
+                                <button class="btn btn-gold w-100">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Room Modal 12 -->
+    <div class="modal fade" id="roomModal12" tabindex="-1" aria-labelledby="roomModal12Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="roomModal12Label">Accessible Room</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="https://images.unsplash.com/photo-1599619351208-3e6c839d6828?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80" class="room-modal-img" alt="Accessible Room">
+                            <div class="d-flex justify-content-between mb-3">
+                                <span class="modal-price">$219/night</span>
+                                <span><i class="fas fa-user-friends me-2"></i>2 Guests</span>
+                                <span><i class="fas fa-ruler-combined me-2"></i>40 sqm</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h5 class="modal-room-title">Room Features</h5>
+                            <ul class="room-features">
+                                <li><i class="fas fa-bed"></i> King-size or twin beds available</li>
+                                <li><i class="fas fa-wheelchair"></i> Wheelchair accessible throughout</li>
+                                <li><i class="fas fa-bath"></i> Roll-in shower with grab bars</li>
+                                <li><i class="fas fa-volume-up"></i> Visual alarm and notification devices</li>
+                                <li><i class="fas fa-wifi"></i> High-speed WiFi</li>
+                                <li><i class="fas fa-tv"></i> 42" Smart TV with closed captioning</li>
+                            </ul>
+                            <div class="mt-4">
+                                <button class="btn btn-gold w-100">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Room Modal 13 -->
+    <div class="modal fade" id="roomModal13" tabindex="-1" aria-labelledby="roomModal13Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="roomModal13Label">Poolside Villa</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="https://plus.unsplash.com/premium_photo-1661962495669-d72424626bdc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fHw%3D" class="room-modal-img" alt="Poolside Villa">
+                            <div class="d-flex justify-content-between mb-3">
+                                <span class="modal-price">$429/night</span>
+                                <span><i class="fas fa-user-friends me-2"></i>2 Guests</span>
+                                <span><i class="fas fa-ruler-combined me-2"></i>70 sqm</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h5 class="modal-room-title">Villa Features</h5>
+                            <ul class="room-features">
+                                <li><i class="fas fa-bed"></i> King-size bed with premium linens</li>
+                                <li><i class="fas fa-swimming-pool"></i> Direct access to pool area</li>
+                                <li><i class="fas fa-umbrella-beach"></i> Private patio with lounge chairs</li>
+                                <li><i class="fas fa-wifi"></i> High-speed WiFi</li>
+                                <li><i class="fas fa-tv"></i> 42" Smart TV with streaming services</li>
+                                <li><i class="fas fa-bath"></i> Outdoor shower and indoor rain shower</li>
+                            </ul>
+                            <div class="mt-4">
+                                <button class="btn btn-gold w-100">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Room Modal 14 -->
+    <div class="modal fade" id="roomModal14" tabindex="-1" aria-labelledby="roomModal14Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="roomModal14Label">Corner Suite</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="room-modal-img" alt="Corner Suite">
+                            <div class="d-flex justify-content-between mb-3">
+                                <span class="modal-price">$369/night</span>
+                                <span><i class="fas fa-user-friends me-2"></i>2 Guests</span>
+                                <span><i class="fas fa-ruler-combined me-2"></i>55 sqm</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h5 class="modal-room-title">Suite Features</h5>
+                            <ul class="room-features">
+                                <li><i class="fas fa-bed"></i> King-size bed with premium linens</li>
+                                <li><i class="fas fa-city"></i> Panoramic corner views of the city</li>
+                                <li><i class="fas fa-couch"></i> Spacious sitting area</li>
+                                <li><i class="fas fa-wifi"></i> High-speed WiFi</li>
+                                <li><i class="fas fa-wine-glass-alt"></i> Mini-bar with complimentary items</li>
+                                <li><i class="fas fa-bath"></i> Marble bathroom with rain shower</li>
+                            </ul>
+                            <div class="mt-4">
+                                <button class="btn btn-gold w-100">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Room Modal 15 -->
+    <div class="modal fade" id="roomModal15" tabindex="-1" aria-labelledby="roomModal15Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="roomModal15Label">Royal Suite</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="https://plus.unsplash.com/premium_photo-1661914368757-a57361d31b45?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDl8fHxlbnwwfHx8fHw%3D" class="room-modal-img" alt="Royal Suite">
+                            <div class="d-flex justify-content-between mb-3">
+                                <span class="modal-price">$549/night</span>
+                                <span><i class="fas fa-user-friends me-2"></i>4 Guests</span>
+                                <span><i class="fas fa-ruler-combined me-2"></i>130 sqm</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h5 class="modal-room-title">Suite Features</h5>
+                            <ul class="room-features">
+                                <li><i class="fas fa-bed"></i> King-size master bedroom + separate guest room</li>
+                                <li><i class="fas fa-concierge-bell"></i> Dedicated butler service</li>
+                                <li><i class="fas fa-utensils"></i> Private dining room</li>
+                                <li><i class="fas fa-parking"></i> Complimentary valet parking</li>
+                                <li><i class="fas fa-spa"></i> In-room spa treatment area</li>
+                                <li><i class="fas fa-bath"></i> Luxury bathroom with jacuzzi and steam shower</li>
+                            </ul>
+                            <div class="mt-4">
+                                <button class="btn btn-gold w-100">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Room Modal 16 -->
+    <div class="modal fade" id="roomModal16" tabindex="-1" aria-labelledby="roomModal16Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="roomModal16Label">Twin Room</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="https://plus.unsplash.com/premium_photo-1661962346904-8a489ef9b9e7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEyfHx8ZW58MHx8fHx8" class="room-modal-img" alt="Twin Room">
+                            <div class="d-flex justify-content-between mb-3">
+                                <span class="modal-price">$189/night</span>
+                                <span><i class="fas fa-user-friends me-2"></i>2 Guests</span>
+                                <span><i class="fas fa-ruler-combined me-2"></i>30 sqm</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h5 class="modal-room-title">Room Features</h5>
+                            <ul class="room-features">
+                                <li><i class="fas fa-bed"></i> Two comfortable twin beds</li>
+                                <li><i class="fas fa-tv"></i> 42" Smart TV with streaming services</li>
+                                <li><i class="fas fa-wifi"></i> High-speed WiFi</li>
+                                <li><i class="fas fa-coffee"></i> Coffee/tea making facilities</li>
+                                <li><i class="fas fa-snowflake"></i> Air conditioning</li>
+                                <li><i class="fas fa-bath"></i> Marble bathroom with rain shower</li>
+                            </ul>
+                            <div class="mt-4">
+                                <button class="btn btn-gold w-100">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Room Modal 17 -->
+    <div class="modal fade" id="roomModal17" tabindex="-1" aria-labelledby="roomModal17Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="roomModal17Label">Spa Suite</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="room-modal-img" alt="Spa Suite">
+                            <div class="d-flex justify-content-between mb-3">
+                                <span class="modal-price">$479/night</span>
+                                <span><i class="fas fa-user-friends me-2"></i>2 Guests</span>
+                                <span><i class="fas fa-ruler-combined me-2"></i>65 sqm</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h5 class="modal-room-title">Suite Features</h5>
+                            <ul class="room-features">
+                                <li><i class="fas fa-bed"></i> King-size bed with premium linens</li>
+                                <li><i class="fas fa-spa"></i> Private in-room spa treatment area</li>
+                                <li><i class="fas fa-hot-tub"></i> Jacuzzi tub for two</li>
+                                <li><i class="fas fa-leaf"></i> Aromatherapy diffuser</li>
+                                <li><i class="fas fa-wine-glass-alt"></i> Complimentary wellness drinks</li>
+                                <li><i class="fas fa-bath"></i> Luxury bathroom with steam shower</li>
+                            </ul>
+                            <div class="mt-4">
+                                <button class="btn btn-gold w-100">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Room Modal 18 -->
+<div class="modal fade" id="roomModal18" tabindex="-1" aria-labelledby="roomModal18Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="roomModal18Label">Executive Double</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="https://plus.unsplash.com/premium_photo-1661963058256-5358560f4c6c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE3fHx8ZW58MHx8fHx8" class="room-modal-img" alt="Executive Double">
+                        <div class="d-flex justify-content-between mb-3">
+                            <span class="modal-price">$279/night</span>
+                            <span><i class="fas fa-user-friends me-2"></i>2 Guests</span>
+                            <span><i class="fas fa-ruler-combined me-2"></i>38 sqm</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h5 class="modal-room-title">Room Features</h5>
+                        <ul class="room-features">
+                            <li><i class="fas fa-bed"></i> Queen-size bed with premium linens</li>
+                            <li><i class="fas fa-desktop"></i> Spacious work desk</li>
+                            <li><i class="fas fa-wifi"></i> High-speed WiFi with business center access</li>
+                            <li><i class="fas fa-tv"></i> 42" Smart TV with streaming services</li>
+                            <li><i class="fas fa-coffee"></i> Coffee/tea making facilities</li>
+                            <li><i class="fas fa-bath"></i> Marble bathroom with rain shower</li>
+                        </ul>
+                        <div class="mt-4">
+                            <button class="btn btn-gold w-100">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Room Modal 19 -->
+<div class="modal fade" id="roomModal19" tabindex="-1" aria-labelledby="roomModal19Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="roomModal19Label">Panoramic Suite</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="https://plus.unsplash.com/premium_photo-1664299335717-71d868cd964e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="room-modal-img" alt="Panoramic Suite">
+                        <div class="d-flex justify-content-between mb-3">
+                            <span class="modal-price">$419/night</span>
+                            <span><i class="fas fa-user-friends me-2"></i>2 Guests</span>
+                            <span><i class="fas fa-ruler-combined me-2"></i>55 sqm</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h5 class="modal-room-title">Suite Features</h5>
+                        <ul class="room-features">
+                            <li><i class="fas fa-bed"></i> King-size bed with premium linens</li>
+                            <li><i class="fas fa-window-maximize"></i> Floor-to-ceiling windows with city views</li>
+                            <li><i class="fas fa-couch"></i> Comfortable sitting area</li>
+                            <li><i class="fas fa-wifi"></i> High-speed WiFi</li>
+                            <li><i class="fas fa-wine-glass-alt"></i> Mini-bar with complimentary items</li>
+                            <li><i class="fas fa-bath"></i> Marble bathroom with rain shower</li>
+                        </ul>
+                        <div class="mt-4">
+                            <button class="btn btn-gold w-100">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Room Modal 20 -->
+<div class="modal fade" id="roomModal20" tabindex="-1" aria-labelledby="roomModal20Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="roomModal20Label">Grand Deluxe</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="https://plus.unsplash.com/premium_photo-1661962784149-4616ae54e9b4?q=80&w=2154&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="room-modal-img" alt="Grand Deluxe">
+                        <div class="d-flex justify-content-between mb-3">
+                            <span class="modal-price">$319/night</span>
+                            <span><i class="fas fa-user-friends me-2"></i>2 Guests</span>
+                            <span><i class="fas fa-ruler-combined me-2"></i>45 sqm</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h5 class="modal-room-title">Room Features</h5>
+                        <ul class="room-features">
+                            <li><i class="fas fa-bed"></i> King-size bed with premium linens</li>
+                            <li><i class="fas fa-expand"></i> Extra spacious room layout</li>
+                            <li><i class="fas fa-tv"></i> 55" Smart TV with streaming services</li>
+                            <li><i class="fas fa-wifi"></i> High-speed WiFi</li>
+                            <li><i class="fas fa-coffee"></i> Premium coffee/tea making facilities</li>
+                            <li><i class="fas fa-bath"></i> Marble bathroom with rain shower</li>
+                        </ul>
+                        <div class="mt-4">
+                            <button class="btn btn-gold w-100">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- service Section -->
+    <section id="service" class="amenities-section py-5">
+        <div class="container py-5">
+            <div class="text-center mb-5 animate_animated animate_fadeIn">
+                <h2 class="section-title text-white">Our World-Class Services</h2>
+                <p class="text-light">Enjoy our premium facilities designed for your comfort and relaxation</p>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-3 mb-4 animate_animated animate_fadeInLeft">
+                    <div class="p-4">
+                        <div class="amenity-icon floating">
+                            <i class="fas fa-swimming-pool"></i>
+                        </div>
+                        <h5 class="text-white">Infinity Pool</h5>
+                        <p class="text-light">Stunning rooftop pool with panoramic civiews</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4 animate_animated animatefadeInLeft animate_delay-1s">
+                    <div class="p-4">
+                        <div class="amenity-icon floating">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h5 class="text-white">Fine Dining</h5>
+                        <p class="text-light">Award-winning restaurants with international cuisine</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4 animate_animated animatefadeInRight animate_delay-1s">
+                    <div class="p-4">
+                        <div class="amenity-icon floating">
+                            <i class="fas fa-spa"></i>
+                        </div>
+                        <h5 class="text-white">Spa & Wellness</h5>
+                        <p class="text-light">Rejuvenate with our luxury spa treatments</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4 animate_animated animate_fadeInRight">
+                    <div class="p-4">
+                        <div class="amenity-icon floating">
+                            <i class="fas fa-dumbbell"></i>
+                        </div>
+                        <h5 class="text-white">Fitness Center</h5>
+                        <p class="text-light">State-of-the-art gym with personal trainers</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Review Section -->
+    <section id="review" class="py-5">
+        <div class="container py-5">
+            <div class="text-center mb-5 animate_animated animate_fadeIn">
+                <h2 class="section-title">What Our Guests Say</h2>
+                <p class="text-muted">Hear from our satisfied guests about their experiences</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4 animate_animated animate_fadeInUp">
+                    <div class="testimonial-card">
+                        <div class="text-center mb-3">
+                            <img src="https://randomuser.me/api/portraits/women/32.jpg" class="testimonial-img" alt="Guest">
+                        </div>
+                        <div class="text-center mb-3">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-center mb-3">"Absolutely stunning hotel with exceptional service. The room was spacious and the view was breathtaking. Will definitely return!"</p>
+                        <h6 class="text-center" style="color: var(--navy-blue);">Sarah Johnson</h6>
+                    </div>
+                </div>
+                <div class="col-md-4 animate_animated animatefadeInUp animate_delay-1s">
+                    <div class="testimonial-card">
+                        <div class="text-center mb-3">
+                            <img src="https://randomuser.me/api/portraits/men/45.jpg" class="testimonial-img" alt="Guest">
+                        </div>
+                        <div class="text-center mb-3">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-center mb-3">"The attention to detail is remarkable. From the luxurious bedding to the gourmet breakfast, every aspect exceeded our expectations."</p>
+                        <h6 class="text-center" style="color: var(--navy-blue);">Michael Chen</h6>
+                    </div>
+                </div>
+                <div class="col-md-4 animate_animated animatefadeInUp animate_delay-2s">
+                    <div class="testimonial-card">
+                        <div class="text-center mb-3">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" class="testimonial-img" alt="Guest">
+                        </div>
+                        <div class="text-center mb-3">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-center mb-3">"Perfect location with world-class amenities. The spa treatments were divine and the staff went above and beyond to make our stay special."</p>
+                        <h6 class="text-center" style="color: var(--navy-blue);">Emma Rodriguez</h6>
+                    </div>
+                </div>
+                <div class="col-md-4 animate_animated animate_fadeInUp">
+                    <div class="testimonial-card">
+                        <div class="text-center mb-3">
+                            <img src="https://randomuser.me/api/portraits/men/22.jpg" class="testimonial-img" alt="Guest">
+                        </div>
+                        <div class="text-center mb-3">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                        <p class="text-center mb-3">"The executive suite was beyond luxurious. The bed was incredibly comfortable and the room service was prompt and delicious. Highly recommend!"</p>
+                        <h6 class="text-center" style="color: var(--navy-blue);">David Wilson</h6>
+                    </div>
+                </div>
+                <div class="col-md-4 animate_animated animatefadeInUp animate_delay-1s">
+                    <div class="testimonial-card">
+                        <div class="text-center mb-3">
+                            <img src="https://randomuser.me/api/portraits/women/55.jpg" class="testimonial-img" alt="Guest">
+                        </div>
+                        <div class="text-center mb-3">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-center mb-3">"Beautiful property with excellent amenities. The infinity pool was a highlight of our stay. Only wish we could have stayed longer!"</p>
+                        <h6 class="text-center" style="color: var(--navy-blue);">Jennifer Lee</h6>
+                    </div>
+                </div>
+                <div class="col-md-4 animate_animated animatefadeInUp animate_delay-2s">
+                    <div class="testimonial-card">
+                        <div class="text-center mb-3">
+                            <img src="https://randomuser.me/api/portraits/men/78.jpg" class="testimonial-img" alt="Guest">
+                        </div>
+                        <div class="text-center mb-3">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-center mb-3">"From check-in to check-out, everything was flawless. The concierge helped us get reservations at the best restaurants in town. Exceptional service!"</p>
+                        <h6 class="text-center" style="color: var(--navy-blue);">Robert Taylor</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offer Banner -->
+    <section class="py-4" style="background-color: var(--gold);">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8 animate_animated animate_fadeInLeft">
+                    <h4 class="mb-0 text-white">Special Summer Offer - Get 20% Off on All Rooms!</h4>
+                </div>
+                <div class="col-md-4 text-md-end animate_animated animate_fadeInRight">
+                    <a href="#" class="btn btn-dark rounded-pill px-4">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-6 animate_animated animate_fadeInLeft">
+                    <h2 class="section-title mb-4">Contact Us</h2>
+                    <p class="para"><b>Have questions or need assistance with your booking? Our team is available 24/7 to help you.</b></p>
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="fas fa-map-marker-alt me-3" style="color: var(--gold); font-size: 1.5rem;"></i>
+                        <p class="mb-0">Sector 3, Block IB 177 & 178, Salt Lake City Sector 5, Kolkata - 700091 (Near Columbia Asia Hospital)</p>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="fas fa-phone-alt me-3" style="color: var(--gold); font-size: 1.5rem;"></i>
+                        <p class="mb-0 contact_number"><a href="tel:+917407782294">+91 7407782294</a> / <a href="tel:+918389802690">+91 8389802690</a></p>
+                    </div>
+                    <div class="d-flex align-items-center mb-4">
+                        <i class="fas fa-envelope me-3" style="color: var(--gold); font-size: 1.5rem;"></i>
+                        <p class="mb-0">eternastay123@gmail.com</p>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-4 mt-lg-0 animate_animated animate_fadeInRight">
+                    <div class="card border-0 shadow">
+                        <div class="card-body p-4">
+                            <h5 class="card-title mb-4" style="color: var(--navy-blue);">Send Us a Message</h5>
+                            <form>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" placeholder="Your Name">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" placeholder="Your Email">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" placeholder="Subject">
+                                </div>
+                                <div class="mb-3">
+                                    <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-gold w-100">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0 animate_animated animate_fadeInUp">
+                    <h5 class="footer-title">Eterna Stay</h5>
+                    <p>Experience the pinnacle of luxury and comfort at our premium hotel. We're committed to providing exceptional service and unforgettable experiences.</p>
+                    <div class="mt-4">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0 animate_animated animatefadeInUp animate_delay-1s">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <div class="footer-links">
+                        <a href="#">Home</a>
+                        <a href="#rooms">Rooms</a>
+                        <a href="#service">Services</a>
+                        <a href="#review">Reviews</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0 animate_animated animatefadeInUp animate_delay-2s">
+                    <h5 class="footer-title">Contact Info</h5>
+                    <div class="footer-links">
+                        <a href="#"><i class="fas fa-map-marker-alt me-2"></i> Sector 3, Block IB 177 & 178, Salt Lake City Sector 5, Kolkata - 700091 (Near Columbia Asia Hospital)</a>
+                        <a href="#"><i class="fas fa-phone-alt me-2"></i> +91 7407782294 / +91 8389802690</a>
+                        <a href="#"><i class="fas fa-envelope me-2"></i> eternastay123@gmail.com</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 animate_animated animatefadeInUp animate_delay-3s">
+                    <h5 class="footer-title">Connect us</h5>
+                    <p>Subscribe to our social networks for special offers and updates.</p>
+                    <form class="mt-3">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email">
+                            <button class="btn btn-gold" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright text-center animate_animated animate_fadeIn">
+                <p class="mb-0">&copy; 2025 Eterna Stay. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- js link -->
+   <script src="app.js"></script>
+</body>
+</html>
